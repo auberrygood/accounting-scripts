@@ -18,11 +18,14 @@ from melons import melons
 # for melon in melon_info:
 #     print_melon(melon_names[i], melon_seedlessness[i], melon_prices[i])
 
-for melon in melons:
-    print (melon)
-    print (f"   price: ${melons[melon]['price']:.2f}")
-    print (f"   seedless: {melons[melon]['seedless']}")
-    print (f"   flesh color: {melons[melon]['flesh_color']}")
-    print (f"   rind color: {melons[melon]['rind_color']}")
-    print (f"   weight: {melons[melon]['weight']}")
-    print ()
+def print_melons(melons):
+    for melon in melons:
+        print (melon)
+        print (f"   price: ${melons[melon]['price']:.2f}")
+        print (f"   seedless: {melons[melon]['seedless']}")
+        print (f"   flesh color: {melons[melon]['flesh_color']}")
+        print (f"   rind color: {melons[melon]['rind_color']}")
+        print (f"   weight: {melons[melon]['weight']}")
+        print ()
+
+print_melons(melons)
